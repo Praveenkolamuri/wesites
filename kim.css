@@ -1,0 +1,59 @@
+h1{
+    color:white;
+    text-align: center;
+    text-decoration:underline;
+}
+h2{
+    color: white;
+    text-align: left;
+   margin-left: 20px;
+}
+p{
+    text-align: center;
+    color:white;
+    text-size-adjust: 24px;
+    
+}
+video{
+    object-fit: fill;
+    position: fixed;
+    padding: auto;
+    margin: -20px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+input{
+    width: 100%;
+    margin: 0px 0px 0px -10px;
+}
+.floating-window {
+    width: 100px; /* Set the width as needed */
+  height: 100px; /* Set the height to cover the full viewport height */
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: auto; /* Enable scrolling if content overflows */
+  color: #ffffff; /* Set text color for better contrast */
+  margin-right: 10px; /* Adjust spacing between windows */
+  /* Add additional styling as needed */
+  border-radius: 10px;
+}
+  .slide {
+    flex: 0 0 auto;
+    margin-right: 30px; /* Adjust the margin between slides as needed */
+  }
+image{
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hero{
+    background: url('http://t1.gstatic.com/images?q=tbn:ANd9GcRtOje0YysniKO1eLP8HcvQDjhTglnyJH2kFWbdLABCrMvTTnsITA_pM2qsDADjsHxMbccb') center/cover;
+}
+.villan{
+    background: url('http://t1.gstatic.com/images?q=tbn:ANd9GcTvjsBSFTgrOCcPX4K_43P90_jcXbRd7JXEIUGGoKa85ELv5Nh1Twy8JDiAmBQAo1FU1TQomA') center/cover;
+}
+.heroine{
+    background: url('https://in.bmscdn.com/iedb/artist/images/website/poster/large/rashmika-mandanna-1076783-28-12-2016-12-20-39.jpg') center/cover;
+}

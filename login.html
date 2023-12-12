@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+      .class{
+        color:white;
+      }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* Prevent video overflow */
+            font-family: 'Arial', sans-serif;
+        }
+
+        video {
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1; /* Place the video behind other elements */
+        }
+
+        .glass-container {
+            background: rgba(239, 239, 239, 0.1); /* Adjust the alpha value for transparency */
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            position: relative; /* Ensure the container stays on top of the video */
+            z-index: 1; /* Place the container above the video */
+        }
+
+        .glass-container i {
+            margin-right: 10px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.5); /* Adjust the alpha value for transparency */
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <title>login page</title>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="asets/videos/Y2meta.app-4K Bugatti Chiron 3D Animation _ Made In Blender _ 2023-(1080p).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="glass-container">
+        <h2 class="class">Login</h2>
+        <form>
+            <div>
+              <i class='bx bxs-user'></i>
+                <input type="text" placeholder="Username">
+            </div>
+            <div>
+              <i class='bx bxs-lock-alt'></i>
+                <input type="password" placeholder="Password">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
